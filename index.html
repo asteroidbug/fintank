@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fintank — Comprehensive Financial Services</title>
+  <meta name="description" content="Fintank — CA services, financial advisors, actuarial consulting, legal compliance, company registration, GST and tax services." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --accent:#0f6cff;
+      --muted:#6b7280;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.7);
+      --maxw:1100px;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#0b1220;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:32px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#3ab0ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:28px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .hero .hero-card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 24px rgba(10,20,40,0.06)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .feature{display:flex;gap:12px;align-items:center}
+    .ficon{width:44px;height:44px;border-radius:10px;background:#eef6ff;display:grid;place-items:center;font-weight:700;color:var(--accent)}
+
+    /* Services */
+    section.services{padding:28px 0}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.04)}
+    .service h3{margin:0 0 8px}
+    .service p{color:var(--muted);margin:0}
+
+    /* Why */
+    .why{display:flex;gap:20px;align-items:center;margin:26px 0}
+    .why .list{display:flex;flex-direction:column;gap:12px}
+
+    /* Pricing */
+    .pricing{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.04);margin-top:16px}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .testimonial{background:var(--card);padding:14px;border-radius:12px}
+
+    /* FAQ + Contact */
+    .faq-contact{display:grid;grid-template-columns:1fr 420px;gap:24px;margin-top:22px}
+    .faq h4{margin-top:0}
+    .contact-card{background:var(--card);padding:18px;border-radius:12px}
+    .form-row{display:flex;gap:8px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+    button.primary{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:none;font-weight:700}
+
+    footer{margin-top:40px;padding:24px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(10,20,40,0.04)}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .faq-contact{grid-template-columns:1fr}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .testimonials{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .service-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FT</div>
+        <div>
+          <div style="font-weight:800">Fintank</div>
+          <div style="font-size:12px;color:var(--muted)">Your financial needs. One tank.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="cta" href="#contact">Get a Quote</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>End-to-end financial services for startups, MSMEs and professionals</h1>
+          <p>Fintank offers Chartered Accountancy, financial advisory, actuarial consulting, legal compliance, company registration, GST and tax services — all under one roof so you can focus on growth.</p>
+
+          <div class="hero-card">
+            <div class="features">
+              <div class="feature"><div class="ficon">CA</div><div><strong>CA Services</strong><div style="font-size:13px;color:var(--muted)">Audits, bookkeeping, tax filings</div></div></div>
+              <div class="feature"><div class="ficon">FA</div><div><strong>Financial Advisors</strong><div style="font-size:13px;color:var(--muted)">Investment & planning</div></div></div>
+              <div class="feature"><div class="ficon">AC</div><div><strong>Actuary</strong><div style="font-size:13px;color:var(--muted)">Risk & insurance models</div></div></div>
+              <div class="feature"><div class="ficon">LC</div><div><strong>Legal Compliance</strong><div style="font-size:13px;color:var(--muted)">Statutory & corporate governance</div></div></div>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+              <a class="cta" href="#contact">Request a Consultation</a>
+              <a href="#services" style="text-decoration:none;color:var(--muted);font-weight:700">Explore services →</a>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div style="background:linear-gradient(180deg,#fff,#f4fbff);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(10,20,40,0.06);">
+            <h3 style="margin:0 0 8px">Quick quote</h3>
+            <form action="https://formspree.io/f/xandzdez" method="POST">
+              <div style="margin-bottom:8px"><input type="text" name="name" required placeholder="Your name" /></div>
+              <div style="margin-bottom:8px"><input type="text" name="company" placeholder="Company / Startup" /></div>
+              <div style="margin-bottom:8px">
+                <select name="service">
+                  <option>Choose a service</option>
+                  <option>CA Services</option>
+                  <option>Financial Advisory</option>
+                  <option>Actuarial Consulting</option>
+                  <option>Legal Compliance</option>
+                  <option>Company Registration</option>
+                  <option>GST & Tax Filings</option>
+                </select>
+              </div>
+              <div style="display:flex;gap:8px">
+                <button class="primary" type="submit">Request</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid" style="margin-top:12px">
+          <div class="service">
+            <h3>Chartered Accountancy (CA)</h3>
+            <p>Audit & assurance, bookkeeping, financial statements, tax planning and compliance, internal control reviews and payroll management.</p>
+          </div>
+
+          <div class="service">
+            <h3>Financial Advisors</h3>
+            <p>Personalised financial planning, investment advisory, cashflow management, budgeting & projections, fundraising support for startups.</p>
+          </div>
+
+          <div class="service">
+            <h3>Actuarial Consulting</h3>
+            <p>Risk modelling, insurance pricing, pension valuations, valuation of employee benefit schemes and predictive analytics for financial risk.</p>
+          </div>
+
+          <div class="service">
+            <h3>Legal & Regulatory Compliance</h3>
+            <p>Company secretarial services, statutory compliances, drafting agreements, board minutes, and advisory on corporate governance.</p>
+          </div>
+
+          <div class="service">
+            <h3>Company Registration & Secretarial</h3>
+            <p>New company/LLP registration, DIN & DSC support, MOA/AOA drafting, ROC filings and annual compliances.</p>
+          </div>
+
+          <div class="service">
+            <h3>GST & Tax Services</h3>
+            <p>GST registration, returns, tax filing (ITR), TDS compliance, tax notices handling and proactive tax planning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div style="flex:1">
+          <h2>Why choose Fintank?</h2>
+          <div class="list">
+            <div><strong>Integrated team:</strong> CAs, actuaries, legal experts and financial planners working together.</div>
+            <div><strong>Transparent pricing:</strong> clear deliverables and no hidden fees.</div>
+            <div><strong>Secure processes:</strong> client portal & encrypted file transfers available on request.</div>
+            <div><strong>Tailored advice:</strong> solutions built for your industry and growth stage.</div>
+          </div>
+        </div>
+        <div style="width:320px"></div>
+      </section>
+
+      <section class="faq-contact">
+        <div>
+          <h2 id="faq">FAQ</h2>
+          <div class="faq">
+            <div style="margin-bottom:12px">
+              <h4>Do you work with startups only?</h4>
+              <p style="color:var(--muted)">No — we work with freelancers, small businesses, startups, mid-sized and large scale companies across industries.</p>
+            </div>
+            <div style="margin-bottom:12px">
+              <h4>How do you charge?</h4>
+              <p style="color:var(--muted)">We offer monthly retainers and project-based models, but always provide a <strong>custom pricing</strong> plan suited to your requirements.</p>
+            </div>
+            <div>
+              <h4>How secure is my financial data?</h4>
+              <p style="color:var(--muted)">We follow industry best practices for data security and can sign NDAs. For higher security, we provide an encrypted client portal integration.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div id="contact" class="contact-card">
+            <h3>Contact Fintank</h3>
+            <p style="color:var(--muted);font-size:13px">Send details and we'll get back within 1 business day.</p>
+            
+            <!-- Updated Formspree Form -->
+            <form action="https://formspree.io/f/xandzdez" method="POST">
+              <div style="margin-bottom:8px"><input type="text" name="name" required placeholder="Your name" /></div>
+              <div style="margin-bottom:8px"><input type="email" name="email" required placeholder="Email" /></div>
+              <div style="margin-bottom:8px"><input type="text" name="company" placeholder="Company" /></div>
+              <div style="margin-bottom:8px"><textarea name="message" rows="4" placeholder="Tell us about your need"></textarea></div>
+              <div style="display:flex;gap:8px"><button class="primary" type="submit">Send message</button></div>
+            </form>
+
+            <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+              <div><strong>Email:</strong> hsdileep743@gmail.com</div>
+              <div><strong>Phone:</strong> +91 8310569250</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© <strong>Fintank</strong> — All rights reserved.</div>
+        <div style="color:var(--muted)">Designed with care • Terms • Privacy</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
